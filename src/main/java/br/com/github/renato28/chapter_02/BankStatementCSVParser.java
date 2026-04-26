@@ -8,7 +8,7 @@ import static java.util.stream.Collectors.toList;
 
 public class BankStatementCSVParser implements BankStatementParser {
 
-    private static final DateTimeFormatter DATE_PATTERN = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    private static final DateTimeFormatter DATE_PATTERN = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
     @Override
     public BankTransaction parseFrom(String line) {

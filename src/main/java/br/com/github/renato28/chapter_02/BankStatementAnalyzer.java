@@ -19,6 +19,8 @@ public class BankStatementAnalyzer {
 
         final BankStatementProcessor bankStatementProcessor = new BankStatementProcessor(bankTransactions);
 
+        collectSummary(bankStatementProcessor);
+
     }
 
     private static void collectSummary(final BankStatementProcessor bankStatementProcessor) {
